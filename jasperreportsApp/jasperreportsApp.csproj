@@ -471,11 +471,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IDSTest.cs" />
+    <Compile Include="SqlConnectionDSTest.cs" />
+    <Compile Include="JRTableModelDSTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="reports\NOW_01.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\NOW_01.jrxml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\R01.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\R01.jrxml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="libs\ant-launcher-1.7.1.dll" />
