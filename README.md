@@ -2,6 +2,8 @@ jasperreports for .net framework 是使用ikvm.net工具將jasperreports6 相依
 
 使.net環境下可以使用C# or VB.net 執行 jasperreports 所編譯後的jasper檔執行報表製作
 
+可相容於 .net framework 2.0以上環境
+
 元件版本
 ikvmbin-8.1.5717.0、jasperreports6.3 
 
