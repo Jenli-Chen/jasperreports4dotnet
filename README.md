@@ -22,6 +22,14 @@ http://community.jaspersoft.com/project/jaspersoft-studio
 iReport Designer - Visual Designer for JasperReports. 
 http://community.jaspersoft.com/project/ireport-designer/releases
 
+使用方法
+步驟1.
+使用報表設計工具設計報表樣版(.jrxml)，使用報表設計工具設計編輯報表樣版(.jasper)
+步驟2.
+參考範例程式
+/jasperreportsApp/jasperreportsApp/JRTableModelDSTest.cs
+/jasperreportsApp/jasperreportsApp/SqlConnectionDSTest.cs
+
 已知問題，無法使用下列API
 JasperCompileManager.compileReportToFile(fileName)
 JasperCompileManager.compileReport(fileName)
