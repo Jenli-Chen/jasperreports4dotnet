@@ -13,7 +13,7 @@
         public readonly static string TASK_DOCX = "docx";
         public readonly static string TASK_PPTX = "pptx";
         public readonly static string TASK_TEXT = "txt";
-        //public readonly static string TASK_XLS = "xls";
+        public readonly static string TASK_XLS = "xls";
         //public readonly static string TASK_XML = "xml";
         //public readonly static string TASK_XML_EMBED = "xmlEmbed";
         //public readonly static string TASK_ODT = "odt";

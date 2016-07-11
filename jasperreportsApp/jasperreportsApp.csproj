@@ -397,9 +397,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>libs\olap4j-0.9.7.309-JS-3.dll</HintPath>
     </Reference>
-    <Reference Include="poi-ooxml-schemas-3.10.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\poi-ooxml-schemas-3.10.1.dll</HintPath>
+    <Reference Include="poi-3.10-FINAL-20140208">
+      <HintPath>libs\poi-3.10-FINAL-20140208.dll</HintPath>
+    </Reference>
+    <Reference Include="poi-ooxml-3.10-FINAL-20140208">
+      <HintPath>libs\poi-ooxml-3.10-FINAL-20140208.dll</HintPath>
+    </Reference>
+    <Reference Include="poi-ooxml-schemas-3.10-FINAL-20140208">
+      <HintPath>libs\poi-ooxml-schemas-3.10-FINAL-20140208.dll</HintPath>
     </Reference>
     <Reference Include="serializer-2.7.2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

@@ -109,27 +109,27 @@ namespace jasperreportsApp
                     TimeSpan prot = DateTime.Now.Subtract(start);
                     System.Console.WriteLine("TASK_PPTX creation time : " + prot.Seconds);
                 }
-                //else if (TASK_XLS.Equals(taskName))
-                //{
-                //    File sourceFile = new File(fileName);
-                //    Map dateFormats = new HashMap();
-                //    dateFormats.put("EEE, MMM d, yyyy", "ddd, mmm d, yyyy");
+                else if (TASK_XLS.Equals(taskName))
+                {
+                    File sourceFile = new File(fileName);
+                    Map dateFormats = new HashMap();
+                    dateFormats.put("EEE, MMM d, yyyy", "ddd, mmm d, yyyy");
 
-                //    parms.put(JRXlsExporterParameter.IS_DETECT_CELL_TYPE, java.lang.Boolean.FALSE);
-                //    parms.put(JRXlsExporterParameter.IS_FONT_SIZE_FIX_ENABLED, java.lang.Boolean.TRUE);
-                //    parms.put(JRXlsExporterParameter.IS_WHITE_PAGE_BACKGROUND, java.lang.Boolean.FALSE);
-                //    parms.put(JRXlsExporterParameter.IS_REMOVE_EMPTY_SPACE_BETWEEN_ROWS, java.lang.Boolean.TRUE);
-                //    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
-                //    /////JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
-                //    //JExcelApiExporter, JROdsExporter, JRXlsAbstractMetadataExporter, JRXlsExporter, JRXlsxExporter
-                //    File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".xls");
-                //    JExcelApiExporter exporter = new JExcelApiExporter();
-                //    exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
-                //    exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME, destFile.toString());
+                    parms.put(JRXlsExporterParameter.IS_DETECT_CELL_TYPE, java.lang.Boolean.FALSE);
+                    parms.put(JRXlsExporterParameter.IS_FONT_SIZE_FIX_ENABLED, java.lang.Boolean.TRUE);
+                    parms.put(JRXlsExporterParameter.IS_WHITE_PAGE_BACKGROUND, java.lang.Boolean.FALSE);
+                    parms.put(JRXlsExporterParameter.IS_REMOVE_EMPTY_SPACE_BETWEEN_ROWS, java.lang.Boolean.TRUE);
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
+                    /////JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
+                    //JExcelApiExporter, JROdsExporter, JRXlsAbstractMetadataExporter, JRXlsExporter, JRXlsxExporter
+                    File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".xls");
+                    JExcelApiExporter exporter = new JExcelApiExporter();
+                    exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+                    exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME, destFile.toString());
 
-                //    exporter.exportReport();
-                //    System.Console.WriteLine("TASK_XLS creation time : " + (DateTime.Now.Subtract(start)));
-                //}
+                    exporter.exportReport();
+                    System.Console.WriteLine("TASK_XLS creation time : " + (DateTime.Now.Subtract(start)));
+                }
                 else if (TASK_XLSX.Equals(taskName))
                 {
                     File sourceFile = new File(fileName);
