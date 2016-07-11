@@ -123,7 +123,8 @@ namespace jasperreportsApp
                     /////JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
                     //JExcelApiExporter, JROdsExporter, JRXlsAbstractMetadataExporter, JRXlsExporter, JRXlsxExporter
                     File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".xls");
-                    JExcelApiExporter exporter = new JExcelApiExporter();
+                    //JExcelApiExporter exporter = new JExcelApiExporter();
+                    JRXlsExporter exporter = new JRXlsExporter();
                     exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
                     exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME, destFile.toString());
 
