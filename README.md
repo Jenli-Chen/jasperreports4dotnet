@@ -1,3 +1,9 @@
+JasperReports 是由Java 所發展開發 open source 報表工具，可以支援多種形式產生動態報表，並支援多種報表格式產出。
+功能類似 crystal reports 的 open source 報表工具。
+
+唯官方目前尚無支援直接使用 .net framework 的版本。
+因此有本專案產生，目的是要讓開發者能簡易使用功能強大JasperReports open source 報表工具。
+
 jasperreports for .net framework 是使用ikvm.net工具將jasperreports6 相依jar編譯成dll
 
 使.net環境下可以使用C# or VB.net 執行 jasperreports 所編譯後的jasper檔執行報表製作
@@ -21,6 +27,14 @@ http://community.jaspersoft.com/project/jaspersoft-studio
 
 iReport Designer - Visual Designer for JasperReports. 
 http://community.jaspersoft.com/project/ireport-designer/releases
+
+使用方法
+步驟1.
+使用報表設計工具設計報表樣版(.jrxml)，使用報表設計工具設計編輯報表樣版(.jasper)
+步驟2.
+參考範例程式
+/jasperreportsApp/jasperreportsApp/JRTableModelDSTest.cs
+/jasperreportsApp/jasperreportsApp/SqlConnectionDSTest.cs
 
 已知問題，無法使用下列API
 JasperCompileManager.compileReportToFile(fileName)
