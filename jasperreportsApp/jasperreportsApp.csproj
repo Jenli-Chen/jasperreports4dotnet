@@ -477,6 +477,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDSTest.cs" />
+    <Compile Include="ChartsDSTest.cs" />
     <Compile Include="SqlConnectionDSTest.cs" />
     <Compile Include="JRTableModelDSTest.cs" />
     <Compile Include="Program.cs" />
@@ -484,18 +485,110 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="reports\AreaChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\AreaChartReport.jrxml" />
+    <None Include="reports\Bar3DChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\Bar3DChartReport.jrxml" />
+    <None Include="reports\BarChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\BarChartReport.jrxml" />
+    <None Include="reports\Blank_A4.jasper" />
+    <None Include="reports\Blank_A4.jrxml" />
+    <None Include="reports\BubbleChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\BubbleChartReport.jrxml" />
+    <None Include="reports\CandlestickChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\CandlestickChartReport.jrxml" />
+    <None Include="reports\HighLowChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\HighLowChartReport.jrxml" />
+    <None Include="reports\LineChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\LineChartReport.jrxml" />
+    <None Include="reports\MeterChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\MeterChartReport.jrxml" />
+    <None Include="reports\MultipleAxisChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\MultipleAxisChartReport.jrxml" />
+    <None Include="reports\NORTHWND_01.jasper" />
+    <None Include="reports\NORTHWND_01.jrxml" />
     <None Include="reports\NOW_01.jasper">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="reports\NOW_01.jrxml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="reports\Pie3DChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\Pie3DChartReport.jrxml" />
+    <None Include="reports\PieChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\PieChartReport.jrxml" />
     <None Include="reports\R01.jasper">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="reports\R01.jrxml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="reports\ScatterChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\ScatterChartReport.jrxml" />
+    <None Include="reports\StackedAreaChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\StackedAreaChartReport.jrxml" />
+    <None Include="reports\StackedBar3DChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\StackedBar3DChartReport.jrxml" />
+    <None Include="reports\StackedBarChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\StackedBarChartReport.jrxml" />
+    <None Include="reports\ThermometerChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\ThermometerChartReport.jrxml" />
+    <None Include="reports\TimeSeriesChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\TimeSeriesChartReport.jrxml" />
+    <None Include="reports\XYAreaChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\XYAreaChartReport.jrxml" />
+    <None Include="reports\XYBarChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\XYBarChartReport.jrxml" />
+    <None Include="reports\XYBarChartTimePeriodReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\XYBarChartTimePeriodReport.jrxml" />
+    <None Include="reports\XYBarChartTimeSeriesReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\XYBarChartTimeSeriesReport.jrxml" />
+    <None Include="reports\XYLineChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\XYLineChartReport.jrxml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="libs\ant-launcher-1.7.1.dll" />

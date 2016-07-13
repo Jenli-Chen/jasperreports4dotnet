@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2016-07-07T12:26:02 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d9414e4c-2461-4fcf-9fcc-eabeb6cbbdb0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="training_plan_qc"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value="ZGJvLnVzZXJfaW5mbyAsMTUsMTUsOWI3NGViNmUtZjg0Yi00ODNlLWE1NWUtYTlkZTRkMWVkMTMwOw=="/>
+	<queryString>
+		<![CDATA[SELECT * FROM dbo.user_info WHERE user_level =2]]>
+	</queryString>
+	<field name="user_sn" class="java.lang.Integer"/>
+	<field name="user_id" class="java.lang.String"/>
+	<field name="user_pass" class="java.lang.String"/>
+	<field name="user_category" class="java.lang.Integer"/>
+	<field name="user_team" class="java.lang.String"/>
+	<field name="user_mail" class="java.lang.String"/>
+	<field name="user_level" class="java.lang.Integer"/>
+	<field name="user_hr" class="java.lang.String"/>
+	<field name="user_finish" class="java.lang.Integer"/>
+	<field name="hr_ps" class="java.lang.String"/>
+	<field name="change_times" class="java.lang.Integer"/>
+	<field name="ctms_account" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="40" width="133" height="30" uuid="c8565034-e7a1-4e8f-854a-01c8faae8626"/>
+				<textElement textAlignment="Center">
+					<font fontName="微軟正黑體" size="18" isBold="true" pdfFontName="C:\Windows\Fonts\msjh.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[使用者帳號]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="81" height="30" uuid="7eaac5b8-547c-48f8-a2ff-f5bc4e71559c"/>
+				<text><![CDATA[user_sn]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="0" width="79" height="30" uuid="e1291a26-b0f8-49fb-acdc-65b2ef357e58"/>
+				<text><![CDATA[user_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="0" width="237" height="30" uuid="db0c8c29-e085-4350-8866-206871d89d46"/>
+				<textElement>
+					<font fontName="微軟正黑體" pdfFontName="C:\Windows\Fonts\msjh.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[user_team]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="0" width="79" height="30" uuid="13ed954a-461b-471d-ad4a-f4819445501c"/>
+				<text><![CDATA[user_mail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="0" width="79" height="30" uuid="652fa4f6-1377-42b1-81b2-1c480cbb1850"/>
+				<text><![CDATA[user_level]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="-1" y="0" width="81" height="30" uuid="a781a305-76ae-4ab9-b405-0f006b45f698"/>
+				<textFieldExpression><![CDATA[$F{user_sn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="79" height="30" uuid="d6108c67-b300-4754-b5e7-a6dd523a1025"/>
+				<textFieldExpression><![CDATA[$F{user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="159" y="0" width="237" height="30" uuid="613359c6-f4f7-4fac-819f-4daf0740427b"/>
+				<textElement>
+					<font fontName="微軟正黑體" pdfFontName="C:\Windows\Fonts\msjh.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{user_team}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="396" y="0" width="79" height="30" uuid="c268ec85-5231-41fc-b386-7de7e7cb3f8d"/>
+				<textFieldExpression><![CDATA[$F{user_mail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="475" y="0" width="79" height="30" uuid="50725c78-b387-4fb6-8fa0-a409d49e5d62"/>
+				<textFieldExpression><![CDATA[$F{user_level}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
