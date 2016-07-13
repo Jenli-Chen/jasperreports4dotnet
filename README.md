@@ -19,7 +19,7 @@ http://weblog.ikvm.net/
 相關jasperreports可參考
 http://community.jaspersoft.com/project/jasperreports-library/releases
 
-目前測試過可支援報表格式:PDF、DOCX、XLSX、PPTX、RTF、HTML
+目前測試過可支援報表格式:PDF、DOCX、XLS、XLSX、PPTX、RTF、HTML
 
 報表設計工具
 TIBCO Jaspersoft Studio - Visual Designer for JasperReports. 
@@ -40,4 +40,6 @@ http://community.jaspersoft.com/project/ireport-designer/releases
 JasperCompileManager.compileReportToFile(fileName)
 JasperCompileManager.compileReport(fileName)
 JExcelApiExporter
-JRXlsExporter
+
+2016/07/11
+修復無法使用JRXlsExporter 產出xls問題。
