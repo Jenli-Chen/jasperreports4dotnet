@@ -9,7 +9,16 @@ namespace jasperreportsApp
     class Program
     {
         static void Main(string[] args)
-        {
+        { 
+
+            JChartsTest jChartsTest = new JChartsTest();
+            jChartsTest.ExpReort(DSTest.TASK_PDF);
+            jChartsTest.ExpReort(DSTest.TASK_DOCX);
+
+            JFreeChartsTest jFreeChartsTest = new JFreeChartsTest();
+            jFreeChartsTest.ExpReort(DSTest.TASK_PDF);
+            jFreeChartsTest.ExpReort(DSTest.TASK_DOCX);
+
             ChartsDSTest charts_test = new ChartsDSTest();
             charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.AreaChartReport);
             charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.Bar3DChartReport);
@@ -32,25 +41,34 @@ namespace jasperreportsApp
             charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.XYBarChartReport);
             charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.XYBarChartTimePeriodReport);
             charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.XYBarChartTimeSeriesReport);
-            charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.XYLineChartReport); 
+            charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.XYLineChartReport);
 
-            //DSTest sqlconn_test = new SqlConnectionDSTest();
-            //sqlconn_test.ExpReort(DSTest.TASK_PDF);
-            //sqlconn_test.ExpReort(DSTest.TASK_DOCX);
-            //sqlconn_test.ExpReort(DSTest.TASK_XLS);
-            //sqlconn_test.ExpReort(DSTest.TASK_XLSX);
-            //sqlconn_test.ExpReort(DSTest.TASK_PPTX);
-            //sqlconn_test.ExpReort(DSTest.TASK_RTF);
-            //sqlconn_test.ExpReort(DSTest.TASK_HTML);
+            DSTest json_test = new JsonDSTest();
+            json_test.ExpReort(DSTest.TASK_PDF);
+            json_test.ExpReort(DSTest.TASK_DOCX);
+            json_test.ExpReort(DSTest.TASK_XLS);
+            json_test.ExpReort(DSTest.TASK_XLSX);
+            json_test.ExpReort(DSTest.TASK_PPTX);
+            json_test.ExpReort(DSTest.TASK_RTF);
+            json_test.ExpReort(DSTest.TASK_HTML);
 
-            //DSTest jrtable_test = new JRTableModelDSTest(); 
-            //jrtable_test.ExpReort(DSTest.TASK_PDF);
-            //jrtable_test.ExpReort(DSTest.TASK_DOCX);
-            //jrtable_test.ExpReort(DSTest.TASK_XLS);
-            //jrtable_test.ExpReort(DSTest.TASK_XLSX);
-            //jrtable_test.ExpReort(DSTest.TASK_PPTX);
-            //jrtable_test.ExpReort(DSTest.TASK_RTF);
-            //jrtable_test.ExpReort(DSTest.TASK_HTML);
+            DSTest sqlconn_test = new SqlConnectionDSTest();
+            sqlconn_test.ExpReort(DSTest.TASK_PDF);
+            sqlconn_test.ExpReort(DSTest.TASK_DOCX);
+            sqlconn_test.ExpReort(DSTest.TASK_XLS);
+            sqlconn_test.ExpReort(DSTest.TASK_XLSX);
+            sqlconn_test.ExpReort(DSTest.TASK_PPTX);
+            sqlconn_test.ExpReort(DSTest.TASK_RTF);
+            sqlconn_test.ExpReort(DSTest.TASK_HTML);
+
+            DSTest jrtable_test = new JRTableModelDSTest();
+            jrtable_test.ExpReort(DSTest.TASK_PDF);
+            jrtable_test.ExpReort(DSTest.TASK_DOCX);
+            jrtable_test.ExpReort(DSTest.TASK_XLS);
+            jrtable_test.ExpReort(DSTest.TASK_XLSX);
+            jrtable_test.ExpReort(DSTest.TASK_PPTX);
+            jrtable_test.ExpReort(DSTest.TASK_RTF);
+            jrtable_test.ExpReort(DSTest.TASK_HTML);
 
         }
     }

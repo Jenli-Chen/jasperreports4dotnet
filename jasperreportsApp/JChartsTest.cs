@@ -6,46 +6,36 @@ using net.sf.jasperreports.engine;
 using net.sf.jasperreports.engine.export;
 using net.sf.jasperreports.engine.util;
 using net.sf.jasperreports.engine.export.ooxml;
+using java.awt.image;
+using java.awt;
+using org.jCharts.chartData;
+using org.jCharts.axisChart;
+using org.jCharts.types;
+using org.jCharts.properties;
+using javax.imageio;
 
 namespace jasperreportsApp
 {
-    public class ChartsDSTest : DSTest
-    {
-        public enum ChartType
-        {
-            AreaChartReport,Bar3DChartReport, BarChartReport, BubbleChartReport, CandlestickChartReport,
-            HighLowChartReport, LineChartReport, MeterChartReport, MultipleAxisChartReport, Pie3DChartReport,
-            PieChartReport, ScatterChartReport, StackedAreaChartReport, StackedBar3DChartReport, StackedBarChartReport,
-            ThermometerChartReport, TimeSeriesChartReport, XYAreaChartReport, XYBarChartReport, XYBarChartTimePeriodReport,
-            XYBarChartTimeSeriesReport, XYLineChartReport
-        };
-        private string fileName = "AreaChartReport.jasper";
-
-        public void ExpReort(string taskName, ChartType chartType)
-        {
-            fileName = chartType.ToString()+".jasper";
-            ExpReort(taskName);
-        }
-
+    public class JChartsTest : DSTest
+    { 
+        private string fileName = "JChartsReport.jasper";
+ 
         override public void ExpReort(string taskName)
         {
-            Connection conn = null;
+             
             try
             {
                 string reports_dir = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "reports");
-                fileName = System.IO.Path.Combine(reports_dir, fileName);
-
+                fileName = System.IO.Path.Combine(reports_dir, fileName); 
                 DateTime start = DateTime.Now;/////  DateTime.Now.Millisecond;  
-                conn = getConnection();
-                java.util.Map parms = new java.util.HashMap(); 
-                parms.put("ReportTitle", "The Chart Report Title");
-                parms.put("MaxOrderID", new java.lang.Integer(10400));
-                parms.put("P3", "Watermark test");
-                parms.put(JRParameter.__Fields.REPORT_CONNECTION, conn);
-                
+                JREmptyDataSource ds = new JREmptyDataSource(1);
+                java.util.Map parms = new java.util.HashMap();
+                BufferedImage bufferedImage = getJChart();
+               parms.put("pjChart", bufferedImage);
+
                 if (TASK_FILL.Equals(taskName))
                 { 
-                    JasperFillManager.fillReportToFile(fileName, parms, conn);
+                    JasperFillManager.fillReportToFile(fileName, parms, ds);
                     System.Console.WriteLine("TASK_FILL time : " + (DateTime.Now.Subtract(start)));
                 }
                 else if (TASK_PRINT.Equals(taskName))
@@ -70,7 +60,7 @@ namespace jasperreportsApp
                 else if (TASK_PDF.Equals(taskName))
                 {
                     File sourceFile = new File(fileName);
-                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     JasperExportManager.exportReportToPdfFile(jasperPrint, fileName + ".pdf");
 
                     System.Console.WriteLine("TASK_PDF creation time : " + (DateTime.Now.Subtract(start)));
@@ -80,7 +70,7 @@ namespace jasperreportsApp
                     File sourceFile = new File(fileName);
 
                     ////net.sf.jasperreports.engine.JasperReport jasperPrint = (net.sf.jasperreports.engine.JasperReport)JRLoader.loadObject(sourceFile);
-                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".rtf");
 
                     JRRtfExporter exporter = new JRRtfExporter();
@@ -96,7 +86,7 @@ namespace jasperreportsApp
                 {
                     File sourceFile = new File(fileName);
 
-                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
 
                     File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".docx");
                     JRDocxExporter exporter = new JRDocxExporter();
@@ -111,7 +101,7 @@ namespace jasperreportsApp
                 else if (TASK_PPTX.Equals(taskName))
                 {
                     File sourceFile = new File(fileName);
-                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".pptx");
                     JRPptxExporter exporter = new JRPptxExporter(); 
                     exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
@@ -131,7 +121,7 @@ namespace jasperreportsApp
                     parms.put(JRXlsExporterParameter.IS_FONT_SIZE_FIX_ENABLED, java.lang.Boolean.TRUE);
                     parms.put(JRXlsExporterParameter.IS_WHITE_PAGE_BACKGROUND, java.lang.Boolean.FALSE);
                     parms.put(JRXlsExporterParameter.IS_REMOVE_EMPTY_SPACE_BETWEEN_ROWS, java.lang.Boolean.TRUE);
-                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     /////JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
                     //JExcelApiExporter, JROdsExporter, JRXlsAbstractMetadataExporter, JRXlsExporter, JRXlsxExporter
                     File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".xls");
@@ -148,7 +138,7 @@ namespace jasperreportsApp
                     Map dateFormats = new HashMap();
                     dateFormats.put("EEE, MMM d, yyyy", "ddd, mmm d, yyyy");
 
-                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     /////JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
                     File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".xlsx"); 
                     JRXlsxExporter exporter = new JRXlsxExporter();
@@ -163,7 +153,7 @@ namespace jasperreportsApp
                     Map dateFormats = new HashMap();
                     dateFormats.put("EEE, MMM d, yyyy", "ddd, mmm d, yyyy");
 
-                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     /////JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
                     File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".html"); 
                     JRHtmlExporter exporter = new JRHtmlExporter();
@@ -175,7 +165,7 @@ namespace jasperreportsApp
                 //else if (TASK_JXL.Equals(taskName))
                 //{
                 //    File sourceFile = new File(fileName); 
-                //    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
+                //    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                 //    File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".jxl.xls"); 
                 //    JExcelApiExporter exporter = new JExcelApiExporter(); 
                 //    exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
@@ -190,7 +180,7 @@ namespace jasperreportsApp
                 {
                     File sourceFile = new File(fileName);
 
-                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, conn);
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     ////JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
 
                     File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".csv");
@@ -219,28 +209,51 @@ namespace jasperreportsApp
             }
             finally
             {
-                try
-                {
-                    if (conn != null)
-                        conn.close();
-                }
-                catch (SQLException se)
-                {
-                    se.printStackTrace();
-                }//end finally try
+                
             }//end try
         }
 
 
-        private static Connection getConnection()
-        { 
-            String connectString = @"jdbc:jtds:sqlserver://localhost;instance=SQLEXPRESS;databaseName=NORTHWND";
-            String user = "sa";
-            String password = "sa";
-            java.sql.DriverManager.registerDriver(new net.sourceforge.jtds.jdbc.Driver());
-            //java.lang.Class.forName(driver);
-            Connection conn = DriverManager.getConnection(connectString, user, password);
-            return conn;
+        public static BufferedImage getJChart()
+        {
+            BufferedImage bufferedImage = null;
+            try
+            {
+                //string reports_dir = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "reports");
+                //string fileName = System.IO.Path.Combine(reports_dir, "AreaChart.jpg");
+                //bufferedImage = ImageIO.read(new File(fileName));
+                AreaChartProperties areaChartProperties = new AreaChartProperties();
+                double[][] data = new double[][] {
+                    new double[]{ 10, 15, 30, 53 },
+                    new double[]{ 6, 30, 10, 21 },
+                    new double[]{ 20, 25, 20, 8 } };
+                Paint[] paints = { new Color(0, 255, 0, 100), new Color(255, 0, 0, 100), new Color(0, 0, 255, 100) };
+                String[] legendLabels = { "Games", "Events", "Players" };
+                AxisChartDataSet axisChartDataSet = new AxisChartDataSet(data, legendLabels, paints, ChartType.AREA, areaChartProperties);
+
+                String[] axisLabels = { "January", "March", "May", "June" };
+                DataSeries dataSeries = new DataSeries(axisLabels, "Months", "People", "Popular Events");
+                dataSeries.addIAxisPlotDataSet(axisChartDataSet);
+
+                ChartProperties chartProperties = new ChartProperties();
+                AxisProperties axisProperties = new AxisProperties();
+                axisProperties.setYAxisRoundValuesToNearest(0);
+                LegendProperties legendProperties = new LegendProperties();
+
+                AxisChart axisChart = new AxisChart(dataSeries, chartProperties, axisProperties, legendProperties, 500, 350);
+
+                bufferedImage = new BufferedImage(500, 350, BufferedImage.TYPE_INT_RGB);
+
+                axisChart.setGraphics2D(bufferedImage.createGraphics());
+                axisChart.render();
+
+            }
+            catch (ChartDataException chartDataException)
+
+            {
+                throw new JRScriptletException(chartDataException);
+            }
+            return bufferedImage;
         }
     }
 }

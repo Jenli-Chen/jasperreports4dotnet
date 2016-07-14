@@ -353,6 +353,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>libs\javax.inject-1.dll</HintPath>
     </Reference>
+    <Reference Include="jcharts-0.6.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\jcharts-0.6.0.dll</HintPath>
+    </Reference>
     <Reference Include="jcommon-1.0.23, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>libs\jcommon-1.0.23.dll</HintPath>
@@ -476,8 +480,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JFreeChartsTest.cs" />
+    <Compile Include="JChartsTest.cs" />
     <Compile Include="IDSTest.cs" />
     <Compile Include="ChartsDSTest.cs" />
+    <Compile Include="JsonDSTest.cs" />
     <Compile Include="SqlConnectionDSTest.cs" />
     <Compile Include="JRTableModelDSTest.cs" />
     <Compile Include="Program.cs" />
@@ -485,6 +492,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="data\northwind.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="reports\AreaChartReport.jasper">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -511,6 +521,22 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="reports\HighLowChartReport.jrxml" />
+    <None Include="reports\JChartsReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\JChartsReport.jrxml" />
+    <None Include="reports\JFreeChartReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\JFreeChartReport.jrxml" />
+    <None Include="reports\JsonCustomersReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\JsonCustomersReport.jrxml" />
+    <None Include="reports\JsonOrdersReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\JsonOrdersReport.jrxml" />
     <None Include="reports\LineChartReport.jasper">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -671,6 +697,7 @@
     <Content Include="libs\jasperreports-fonts-6.3.0.dll" />
     <Content Include="libs\javacup-0.10k.dll" />
     <Content Include="libs\javax.inject-1.dll" />
+    <Content Include="libs\jcharts-0.6.0.dll" />
     <Content Include="libs\jcommon-1.0.23.dll" />
     <Content Include="libs\jdom-1.0.dll" />
     <Content Include="libs\jfreechart-1.0.19.dll" />
@@ -682,7 +709,6 @@
     <Content Include="libs\lucene-queryparser-4.5.1.dll" />
     <Content Include="libs\lucene-sandbox-4.5.1.dll" />
     <Content Include="libs\olap4j-0.9.7.309-JS-3.dll" />
-    <Content Include="libs\poi-ooxml-schemas-3.10.1.dll" />
     <Content Include="libs\serializer-2.7.2.dll" />
     <Content Include="libs\slf4j-api-1.5.8.dll" />
     <Content Include="libs\spring-aop-3.0.6.RELEASE.dll" />
@@ -698,6 +724,9 @@
     <Content Include="libs\xmlbeans-2.6.0.dll" />
     <Content Include="libs\xmlParserAPIs-2.6.2.dll" />
     <Content Include="libs\xom-1.0.dll" />
+    <Content Include="reports\AreaChart.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
