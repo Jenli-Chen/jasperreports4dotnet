@@ -480,6 +480,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SpiderChartTest.cs" />
     <Compile Include="JFreeChartsTest.cs" />
     <Compile Include="JChartsTest.cs" />
     <Compile Include="IDSTest.cs" />
@@ -493,6 +494,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="data\northwind.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\spiderDatasource.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="reports\AreaChartReport.jasper">
@@ -525,6 +529,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="reports\JChartsReport.jrxml" />
+    <None Include="reports\JChartsScriptletReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\JChartsScriptletReport.jrxml" />
     <None Include="reports\JFreeChartReport.jasper">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -575,6 +583,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="reports\ScatterChartReport.jrxml" />
+    <None Include="reports\SpiderChart.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\SpiderChart.jrxml" />
     <None Include="reports\StackedAreaChartReport.jasper">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -617,6 +629,7 @@
     <None Include="reports\XYLineChartReport.jrxml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JChartsScriptlet.cs" />
     <Content Include="libs\ant-launcher-1.7.1.dll" />
     <Content Include="libs\aopalliance-1.0.dll" />
     <Content Include="libs\avalon-framework-impl-4.2.0.dll" />
@@ -727,6 +740,7 @@
     <Content Include="reports\AreaChart.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Compile Include="SpiderChartCustomizer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

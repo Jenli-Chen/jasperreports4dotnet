@@ -1,4 +1,5 @@
-﻿using System;
+﻿using net.sf.jasperreports.engine;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,15 +10,20 @@ namespace jasperreportsApp
     class Program
     {
         static void Main(string[] args)
-        { 
-
+        {
+            //java.lang.Class c = java.lang.Class.forName("SpiderChartCustomizer,jasperreportsApp");
             JChartsTest jChartsTest = new JChartsTest();
+            jChartsTest.ExpReort4Scriptlet(DSTest.TASK_PDF);
             jChartsTest.ExpReort(DSTest.TASK_PDF);
             jChartsTest.ExpReort(DSTest.TASK_DOCX);
 
             JFreeChartsTest jFreeChartsTest = new JFreeChartsTest();
             jFreeChartsTest.ExpReort(DSTest.TASK_PDF);
             jFreeChartsTest.ExpReort(DSTest.TASK_DOCX);
+
+            SpiderChartTest spiderChartTest = new SpiderChartTest();
+            spiderChartTest.ExpReort(DSTest.TASK_PDF);
+            spiderChartTest.ExpReort(DSTest.TASK_DOCX);
 
             ChartsDSTest charts_test = new ChartsDSTest();
             charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.AreaChartReport);

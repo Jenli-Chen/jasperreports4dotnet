@@ -13,41 +13,40 @@ using org.jCharts.axisChart;
 using org.jCharts.types;
 using org.jCharts.properties;
 using javax.imageio;
+using net.sf.jasperreports.engine.data;
 
 namespace jasperreportsApp
 {
-    public class JChartsTest : DSTest
-    {
-        private string fileName = "JChartsReport.jasper";
-
-        /// <summary>
-        /// 使用scriptletClass方式 .jrxml檔需指名[Class full name],[dll name]
-        /// ex: scriptletClass="JChartsScriptlet,jasperreportsApp" 
-        /// </summary>
-        /// <param name="taskName"></param>
-        public void ExpReort4Scriptlet(string taskName)
-        {
-            fileName = "JChartsScriptletReport.jasper";
-            ExpReort(taskName);
-        }
+    public class SpiderChartTest : DSTest
+    { 
+        private string fileName = "SpiderChart.jasper";
+ 
         override public void ExpReort(string taskName)
         {
-
+             
             try
             {
                 string reports_dir = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "reports");
-                fileName = System.IO.Path.Combine(reports_dir, fileName);
+                fileName = System.IO.Path.Combine(reports_dir, fileName); 
                 DateTime start = DateTime.Now;/////  DateTime.Now.Millisecond;  
-                JREmptyDataSource ds = new JREmptyDataSource(1);
-                java.util.Map parms = new java.util.HashMap();
-                if (fileName.IndexOf("JChartsReport.jasper") > -1)
+                JRCsvDataSource ds = null;
+                try
                 {
-                    BufferedImage bufferedImage = getJChart();
-                    parms.put("pjChart", bufferedImage);
+                    string csvPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data/spiderDatasource.csv");
+                    String[] columnNames = new String[] { "value", "series", "category" };
+                    ds = new JRCsvDataSource(JRLoader.getLocationInputStream(csvPath), "UTF-8");
+                    ds.setRecordDelimiter("\n");
+                    ds.setUseFirstRowAsHeader(false);
+                    ds.setColumnNames(columnNames);
+                }
+                catch (UnsupportedEncodingException e)
+                {
+                    throw new JRException(e);
                 }
 
+                java.util.Map parms = new java.util.HashMap(); 
                 if (TASK_FILL.Equals(taskName))
-                {
+                { 
                     JasperFillManager.fillReportToFile(fileName, parms, ds);
                     System.Console.WriteLine("TASK_FILL time : " + (DateTime.Now.Subtract(start)));
                 }
@@ -116,7 +115,7 @@ namespace jasperreportsApp
                     File sourceFile = new File(fileName);
                     JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".pptx");
-                    JRPptxExporter exporter = new JRPptxExporter();
+                    JRPptxExporter exporter = new JRPptxExporter(); 
                     exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
                     exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME, destFile.toString());
 
@@ -153,12 +152,12 @@ namespace jasperreportsApp
 
                     JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     /////JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
-                    File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".xlsx");
+                    File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".xlsx"); 
                     JRXlsxExporter exporter = new JRXlsxExporter();
                     exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
-                    exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME, destFile.toString());
-                    exporter.exportReport();
-                    System.Console.WriteLine("TASK_XLSX creation time : " + (DateTime.Now.Subtract(start)));
+                    exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME, destFile.toString());  
+                    exporter.exportReport(); 
+                    System.Console.WriteLine("TASK_XLSX creation time : " + (DateTime.Now.Subtract(start))); 
                 }
                 else if (TASK_HTML.Equals(taskName))
                 {
@@ -168,12 +167,12 @@ namespace jasperreportsApp
 
                     JasperPrint jasperPrint = JasperFillManager.fillReport(fileName, parms, ds);
                     /////JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
-                    File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".html");
+                    File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".html"); 
                     JRHtmlExporter exporter = new JRHtmlExporter();
                     exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
                     exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME, destFile.toString());
                     exporter.exportReport();
-                    System.Console.WriteLine("TASK_HTML creation time : " + (DateTime.Now.Subtract(start)));
+                    System.Console.WriteLine("TASK_HTML creation time : " + (DateTime.Now.Subtract(start))); 
                 }
                 //else if (TASK_JXL.Equals(taskName))
                 //{
@@ -222,7 +221,7 @@ namespace jasperreportsApp
             }
             finally
             {
-
+                
             }//end try
         }
 
