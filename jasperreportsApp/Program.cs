@@ -12,10 +12,48 @@ namespace jasperreportsApp
         static void Main(string[] args)
         {
             //java.lang.Class c = java.lang.Class.forName("SpiderChartCustomizer,jasperreportsApp");
+            BarcodeTest barcodeTest = new BarcodeTest();
+            barcodeTest.ExpReort(DSTest.TASK_HTML);
+            barcodeTest.ExpReort(DSTest.TASK_PDF);
+            barcodeTest.ExpReort(DSTest.TASK_PPTX);
+            barcodeTest.ExpReort(DSTest.TASK_DOCX);
+            //barcodeTest.ExpReort(DSTest.TASK_RTF);
+            //barcodeTest.ExpReort(DSTest.TASK_XLS); 
+
+            DSTest sqlconn_test = new SqlConnectionDSTest();
+            sqlconn_test.ExpReort(DSTest.TASK_PDF);
+            sqlconn_test.ExpReort(DSTest.TASK_DOCX);
+            sqlconn_test.ExpReort(DSTest.TASK_XLS);
+            sqlconn_test.ExpReort(DSTest.TASK_XLSX);
+            sqlconn_test.ExpReort(DSTest.TASK_PPTX);
+            sqlconn_test.ExpReort(DSTest.TASK_RTF);
+            sqlconn_test.ExpReort(DSTest.TASK_HTML);
+
+            DSTest jrtable_test = new JRTableModelDSTest();
+            jrtable_test.ExpReort(DSTest.TASK_PDF);
+            jrtable_test.ExpReort(DSTest.TASK_DOCX);
+            jrtable_test.ExpReort(DSTest.TASK_XLS);
+            jrtable_test.ExpReort(DSTest.TASK_XLSX);
+            jrtable_test.ExpReort(DSTest.TASK_PPTX);
+            jrtable_test.ExpReort(DSTest.TASK_RTF);
+            jrtable_test.ExpReort(DSTest.TASK_HTML);
+
+
             JChartsTest jChartsTest = new JChartsTest();
             jChartsTest.ExpReort4Scriptlet(DSTest.TASK_PDF);
             jChartsTest.ExpReort(DSTest.TASK_PDF);
             jChartsTest.ExpReort(DSTest.TASK_DOCX);
+
+            DSTest json_test = new JsonDSTest();
+            json_test.ExpReort(DSTest.TASK_PDF);
+            json_test.ExpReort(DSTest.TASK_DOCX);
+            json_test.ExpReort(DSTest.TASK_XLS);
+            json_test.ExpReort(DSTest.TASK_XLSX);
+            json_test.ExpReort(DSTest.TASK_PPTX);
+            json_test.ExpReort(DSTest.TASK_RTF);
+            json_test.ExpReort(DSTest.TASK_HTML);
+
+
 
             JFreeChartsTest jFreeChartsTest = new JFreeChartsTest();
             jFreeChartsTest.ExpReort(DSTest.TASK_PDF);
@@ -49,32 +87,7 @@ namespace jasperreportsApp
             charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.XYBarChartTimeSeriesReport);
             charts_test.ExpReort(DSTest.TASK_PDF, ChartsDSTest.ChartType.XYLineChartReport);
 
-            DSTest json_test = new JsonDSTest();
-            json_test.ExpReort(DSTest.TASK_PDF);
-            json_test.ExpReort(DSTest.TASK_DOCX);
-            json_test.ExpReort(DSTest.TASK_XLS);
-            json_test.ExpReort(DSTest.TASK_XLSX);
-            json_test.ExpReort(DSTest.TASK_PPTX);
-            json_test.ExpReort(DSTest.TASK_RTF);
-            json_test.ExpReort(DSTest.TASK_HTML);
 
-            DSTest sqlconn_test = new SqlConnectionDSTest();
-            sqlconn_test.ExpReort(DSTest.TASK_PDF);
-            sqlconn_test.ExpReort(DSTest.TASK_DOCX);
-            sqlconn_test.ExpReort(DSTest.TASK_XLS);
-            sqlconn_test.ExpReort(DSTest.TASK_XLSX);
-            sqlconn_test.ExpReort(DSTest.TASK_PPTX);
-            sqlconn_test.ExpReort(DSTest.TASK_RTF);
-            sqlconn_test.ExpReort(DSTest.TASK_HTML);
-
-            DSTest jrtable_test = new JRTableModelDSTest();
-            jrtable_test.ExpReort(DSTest.TASK_PDF);
-            jrtable_test.ExpReort(DSTest.TASK_DOCX);
-            jrtable_test.ExpReort(DSTest.TASK_XLS);
-            jrtable_test.ExpReort(DSTest.TASK_XLSX);
-            jrtable_test.ExpReort(DSTest.TASK_PPTX);
-            jrtable_test.ExpReort(DSTest.TASK_RTF);
-            jrtable_test.ExpReort(DSTest.TASK_HTML);
 
         }
     }

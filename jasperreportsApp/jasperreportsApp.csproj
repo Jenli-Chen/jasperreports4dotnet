@@ -33,172 +33,164 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ant-launcher-1.7.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ant-launcher-1.7.1">
       <HintPath>libs\ant-launcher-1.7.1.dll</HintPath>
     </Reference>
-    <Reference Include="aopalliance-1.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="antlr-2.7.5">
+      <HintPath>libs\antlr-2.7.5.dll</HintPath>
+    </Reference>
+    <Reference Include="aopalliance-1.0">
       <HintPath>libs\aopalliance-1.0.dll</HintPath>
     </Reference>
-    <Reference Include="avalon-framework-impl-4.2.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="apache-ant-1.7.0">
+      <HintPath>libs\apache-ant-1.7.0.dll</HintPath>
+    </Reference>
+    <Reference Include="avalon-framework-impl-4.2.0">
       <HintPath>libs\avalon-framework-impl-4.2.0.dll</HintPath>
     </Reference>
-    <Reference Include="batik-anim-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="barbecue-1.5-beta1">
+      <HintPath>libs\barbecue-1.5-beta1.dll</HintPath>
+    </Reference>
+    <Reference Include="barcode4j-2.1">
+      <HintPath>libs\barcode4j-2.1.dll</HintPath>
+    </Reference>
+    <Reference Include="batik-anim-1.8">
       <HintPath>libs\batik-anim-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-awt-util-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-awt-util-1.8">
       <HintPath>libs\batik-awt-util-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-css-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-bridge-1.8">
+      <HintPath>libs\batik-bridge-1.8.dll</HintPath>
+    </Reference>
+    <Reference Include="batik-css-1.8">
       <HintPath>libs\batik-css-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-dom-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-dom-1.8">
       <HintPath>libs\batik-dom-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-ext-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-ext-1.8">
       <HintPath>libs\batik-ext-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-gvt-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-gvt-1.8">
       <HintPath>libs\batik-gvt-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-parser-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-parser-1.8">
       <HintPath>libs\batik-parser-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-script-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-script-1.8">
       <HintPath>libs\batik-script-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-svg-dom-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-svg-dom-1.8">
       <HintPath>libs\batik-svg-dom-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-util-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-svggen-1.8">
+      <HintPath>libs\batik-svggen-1.8.dll</HintPath>
+    </Reference>
+    <Reference Include="batik-util-1.8">
       <HintPath>libs\batik-util-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="batik-xml-1.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="batik-xml-1.8">
       <HintPath>libs\batik-xml-1.8.dll</HintPath>
     </Reference>
-    <Reference Include="bcmail-jdk14-1.38, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="bcmail-jdk14-1.38">
       <HintPath>libs\bcmail-jdk14-1.38.dll</HintPath>
     </Reference>
-    <Reference Include="bcmail-jdk14-138, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="bcmail-jdk14-138">
       <HintPath>libs\bcmail-jdk14-138.dll</HintPath>
     </Reference>
-    <Reference Include="bcprov-jdk14-1.38, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="bcprov-jdk14-1.38">
       <HintPath>libs\bcprov-jdk14-1.38.dll</HintPath>
     </Reference>
-    <Reference Include="bcprov-jdk14-138, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="bcprov-jdk14-138">
       <HintPath>libs\bcprov-jdk14-138.dll</HintPath>
     </Reference>
-    <Reference Include="bctsp-jdk14-1.38, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="bctsp-jdk14-1.38">
       <HintPath>libs\bctsp-jdk14-1.38.dll</HintPath>
     </Reference>
-    <Reference Include="castor-core-1.3.3, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="bsh-2.0b4">
+      <HintPath>libs\bsh-2.0b4.dll</HintPath>
+    </Reference>
+    <Reference Include="castor-core-1.3.3">
       <HintPath>libs\castor-core-1.3.3.dll</HintPath>
     </Reference>
-    <Reference Include="castor-xml-1.3.3, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="castor-xml-1.3.3">
       <HintPath>libs\castor-xml-1.3.3.dll</HintPath>
     </Reference>
-    <Reference Include="commons-beanutils-1.9.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-beanutils-1.9.0">
       <HintPath>libs\commons-beanutils-1.9.0.dll</HintPath>
     </Reference>
-    <Reference Include="commons-cli-1.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-cli-1.0">
       <HintPath>libs\commons-cli-1.0.dll</HintPath>
     </Reference>
-    <Reference Include="commons-codec-1.5, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-codec-1.5">
       <HintPath>libs\commons-codec-1.5.dll</HintPath>
     </Reference>
-    <Reference Include="commons-collections-3.2.2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-collections-3.2.2">
       <HintPath>libs\commons-collections-3.2.2.dll</HintPath>
     </Reference>
-    <Reference Include="commons-dbcp-1.2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-dbcp-1.2">
       <HintPath>libs\commons-dbcp-1.2.dll</HintPath>
     </Reference>
-    <Reference Include="commons-digester-2.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-digester-2.1">
       <HintPath>libs\commons-digester-2.1.dll</HintPath>
     </Reference>
-    <Reference Include="commons-discovery-0.2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-discovery-0.2">
       <HintPath>libs\commons-discovery-0.2.dll</HintPath>
     </Reference>
-    <Reference Include="commons-lang-2.6, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-javaflow-1209105">
+      <HintPath>libs\commons-javaflow-1209105.dll</HintPath>
+    </Reference>
+    <Reference Include="commons-lang-2.6">
       <HintPath>libs\commons-lang-2.6.dll</HintPath>
     </Reference>
-    <Reference Include="commons-logging-1.1.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-logging-1.1.1">
       <HintPath>libs\commons-logging-1.1.1.dll</HintPath>
     </Reference>
-    <Reference Include="commons-math-1.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-math-1.0">
       <HintPath>libs\commons-math-1.0.dll</HintPath>
     </Reference>
-    <Reference Include="commons-pool-1.3, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-pool-1.3">
       <HintPath>libs\commons-pool-1.3.dll</HintPath>
     </Reference>
-    <Reference Include="commons-vfs-1.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="commons-vfs-1.0">
       <HintPath>libs\commons-vfs-1.0.dll</HintPath>
     </Reference>
-    <Reference Include="core-2.3.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="core-2.3.0">
       <HintPath>libs\core-2.3.0.dll</HintPath>
     </Reference>
-    <Reference Include="dom4j-1.6.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="dom4j-1.6.1">
       <HintPath>libs\dom4j-1.6.1.dll</HintPath>
     </Reference>
-    <Reference Include="ecj-4.3.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ecj-4.3.1">
       <HintPath>libs\ecj-4.3.1.dll</HintPath>
     </Reference>
-    <Reference Include="eigenbase-properties-1.1.0.10924, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="eigenbase-properties-1.1.0.10924">
       <HintPath>libs\eigenbase-properties-1.1.0.10924.dll</HintPath>
     </Reference>
-    <Reference Include="eigenbase-resgen-1.3.0.11873, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="eigenbase-resgen-1.3.0.11873">
       <HintPath>libs\eigenbase-resgen-1.3.0.11873.dll</HintPath>
     </Reference>
-    <Reference Include="eigenbase-xom-1.3.0.11999, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="eigenbase-xom-1.3.0.11999">
       <HintPath>libs\eigenbase-xom-1.3.0.11999.dll</HintPath>
     </Reference>
-    <Reference Include="httpcore-4.3.2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="groovy-all-2.4.5">
+      <HintPath>libs\groovy-all-2.4.5.dll</HintPath>
+    </Reference>
+    <Reference Include="hibernate-core-3.3.1.GA">
+      <HintPath>libs\hibernate-core-3.3.1.GA.dll</HintPath>
+    </Reference>
+    <Reference Include="httpclient-4.3.4">
+      <HintPath>libs\httpclient-4.3.4.dll</HintPath>
+    </Reference>
+    <Reference Include="httpcore-4.3.2">
       <HintPath>libs\httpcore-4.3.2.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>libs\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="icu4j-57.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="icu4j-57.1">
       <HintPath>libs\icu4j-57.1.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.AWT.WinForms, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
@@ -317,89 +309,86 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>libs\IKVM.Runtime.JNI.dll</HintPath>
     </Reference>
-    <Reference Include="itext-2.1.7.js5, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="itext-2.1.7.js5">
       <HintPath>libs\itext-2.1.7.js5.dll</HintPath>
     </Reference>
-    <Reference Include="jackson-annotations-2.1.4, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jackson-annotations-2.1.4">
       <HintPath>libs\jackson-annotations-2.1.4.dll</HintPath>
     </Reference>
-    <Reference Include="jackson-core-2.1.4, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jackson-core-2.1.4">
       <HintPath>libs\jackson-core-2.1.4.dll</HintPath>
     </Reference>
-    <Reference Include="jackson-databind-2.1.4, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jackson-databind-2.1.4">
       <HintPath>libs\jackson-databind-2.1.4.dll</HintPath>
     </Reference>
-    <Reference Include="jakarta-regexp-1.4, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jakarta-regexp-1.4">
       <HintPath>libs\jakarta-regexp-1.4.dll</HintPath>
     </Reference>
-    <Reference Include="jasperreports-6.3.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jasperreports-6.3.0">
       <HintPath>libs\jasperreports-6.3.0.dll</HintPath>
     </Reference>
-    <Reference Include="jasperreports-fonts-6.3.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jasperreports-fonts-6.3.0">
       <HintPath>libs\jasperreports-fonts-6.3.0.dll</HintPath>
     </Reference>
-    <Reference Include="javacup-0.10k, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="javacup-0.10k">
       <HintPath>libs\javacup-0.10k.dll</HintPath>
     </Reference>
-    <Reference Include="javax.inject-1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="javax.inject-1">
       <HintPath>libs\javax.inject-1.dll</HintPath>
     </Reference>
-    <Reference Include="jcharts-0.6.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="javax.persistence_2.0.0">
+      <HintPath>libs\javax.persistence_2.0.0.dll</HintPath>
+    </Reference>
+    <Reference Include="jaxen-1.1.4">
+      <HintPath>libs\jaxen-1.1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="jcharts-0.6.0">
       <HintPath>libs\jcharts-0.6.0.dll</HintPath>
     </Reference>
-    <Reference Include="jcommon-1.0.23, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jcommon-1.0.23">
       <HintPath>libs\jcommon-1.0.23.dll</HintPath>
     </Reference>
-    <Reference Include="jdom-1.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jdom-1.0">
       <HintPath>libs\jdom-1.0.dll</HintPath>
     </Reference>
-    <Reference Include="jfreechart-1.0.19, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jfreechart-1.0.19">
       <HintPath>libs\jfreechart-1.0.19.dll</HintPath>
     </Reference>
-    <Reference Include="jtds-1.2.7, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jtds-1.2.7">
       <HintPath>libs\jtds-1.2.7.dll</HintPath>
     </Reference>
-    <Reference Include="log4j-1.2.17, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="jxl-2.6.12">
+      <HintPath>libs\jxl-2.6.12.dll</HintPath>
+    </Reference>
+    <Reference Include="log4j-1.2.17">
       <HintPath>libs\log4j-1.2.17.dll</HintPath>
     </Reference>
-    <Reference Include="lucene-analyzers-common-4.5.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="lucene-analyzers-common-4.5.1">
       <HintPath>libs\lucene-analyzers-common-4.5.1.dll</HintPath>
     </Reference>
-    <Reference Include="lucene-core-4.5.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="lucene-core-4.5.1">
       <HintPath>libs\lucene-core-4.5.1.dll</HintPath>
     </Reference>
-    <Reference Include="lucene-queries-4.5.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="lucene-queries-4.5.1">
       <HintPath>libs\lucene-queries-4.5.1.dll</HintPath>
     </Reference>
-    <Reference Include="lucene-queryparser-4.5.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="lucene-queryparser-4.5.1">
       <HintPath>libs\lucene-queryparser-4.5.1.dll</HintPath>
     </Reference>
-    <Reference Include="lucene-sandbox-4.5.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="lucene-sandbox-4.5.1">
       <HintPath>libs\lucene-sandbox-4.5.1.dll</HintPath>
     </Reference>
-    <Reference Include="olap4j-0.9.7.309-JS-3, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="mondrian-3.1.1.12687-Jaspersoft">
+      <HintPath>libs\mondrian-3.1.1.12687-Jaspersoft.dll</HintPath>
+    </Reference>
+    <Reference Include="ojdbc14">
+      <HintPath>libs\ojdbc14.dll</HintPath>
+    </Reference>
+    <Reference Include="olap4j-0.9.7.309-JS-3">
       <HintPath>libs\olap4j-0.9.7.309-JS-3.dll</HintPath>
+    </Reference>
+    <Reference Include="olap4j-1.2.0">
+      <HintPath>libs\olap4j-1.2.0.dll</HintPath>
     </Reference>
     <Reference Include="poi-3.10-FINAL-20140208">
       <HintPath>libs\poi-3.10-FINAL-20140208.dll</HintPath>
@@ -410,40 +399,31 @@
     <Reference Include="poi-ooxml-schemas-3.10-FINAL-20140208">
       <HintPath>libs\poi-ooxml-schemas-3.10-FINAL-20140208.dll</HintPath>
     </Reference>
-    <Reference Include="serializer-2.7.2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="rhino-1.7.6">
+      <HintPath>libs\rhino-1.7.6.dll</HintPath>
+    </Reference>
+    <Reference Include="serializer-2.7.2">
       <HintPath>libs\serializer-2.7.2.dll</HintPath>
     </Reference>
-    <Reference Include="slf4j-api-1.5.8, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="servlet-api">
+      <HintPath>libs\servlet-api.dll</HintPath>
+    </Reference>
+    <Reference Include="slf4j-api-1.5.8">
       <HintPath>libs\slf4j-api-1.5.8.dll</HintPath>
     </Reference>
-    <Reference Include="spring-aop-3.0.6.RELEASE, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\spring-aop-3.0.6.RELEASE.dll</HintPath>
+    <Reference Include="spring-beans-2.5">
+      <HintPath>libs\spring-beans-2.5.dll</HintPath>
     </Reference>
-    <Reference Include="spring-asm-3.0.6.RELEASE, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\spring-asm-3.0.6.RELEASE.dll</HintPath>
+    <Reference Include="spring-core-2.5">
+      <HintPath>libs\spring-core-2.5.dll</HintPath>
     </Reference>
-    <Reference Include="spring-context-3.0.6.RELEASE, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\spring-context-3.0.6.RELEASE.dll</HintPath>
-    </Reference>
-    <Reference Include="spring-expression-3.0.6.RELEASE, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\spring-expression-3.0.6.RELEASE.dll</HintPath>
-    </Reference>
-    <Reference Include="stax-1.2.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="stax-1.2.0">
       <HintPath>libs\stax-1.2.0.dll</HintPath>
     </Reference>
-    <Reference Include="stax-api-1.0-2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="stax-api-1.0-2">
       <HintPath>libs\stax-api-1.0-2.dll</HintPath>
     </Reference>
-    <Reference Include="stax-api-1.0.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="stax-api-1.0.1">
       <HintPath>libs\stax-api-1.0.1.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -454,32 +434,39 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="xercesImpl-2.6.2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="velocity-1.7">
+      <HintPath>libs\velocity-1.7.dll</HintPath>
+    </Reference>
+    <Reference Include="xalan-2.7.2">
+      <HintPath>libs\xalan-2.7.2.dll</HintPath>
+    </Reference>
+    <Reference Include="xercesImpl-2.6.2">
       <HintPath>libs\xercesImpl-2.6.2.dll</HintPath>
     </Reference>
-    <Reference Include="xml-apis-1.3.02, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="xml-apis-1.3.02">
       <HintPath>libs\xml-apis-1.3.02.dll</HintPath>
     </Reference>
-    <Reference Include="xml-apis-ext-1.3.04, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="xml-apis-ext-1.3.04">
       <HintPath>libs\xml-apis-ext-1.3.04.dll</HintPath>
     </Reference>
-    <Reference Include="xmlbeans-2.6.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="xmlbeans-2.6.0">
       <HintPath>libs\xmlbeans-2.6.0.dll</HintPath>
     </Reference>
-    <Reference Include="xmlParserAPIs-2.6.2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="xmlgraphics-commons-2.0">
+      <HintPath>libs\xmlgraphics-commons-2.0.dll</HintPath>
+    </Reference>
+    <Reference Include="xmlParserAPIs-2.6.2">
       <HintPath>libs\xmlParserAPIs-2.6.2.dll</HintPath>
     </Reference>
-    <Reference Include="xom-1.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="xmpcore-5.1.1">
+      <HintPath>libs\xmpcore-5.1.1.dll</HintPath>
+    </Reference>
+    <Reference Include="xom-1.0">
       <HintPath>libs\xom-1.0.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarcodeTest.cs" />
     <Compile Include="SpiderChartTest.cs" />
     <Compile Include="JFreeChartsTest.cs" />
     <Compile Include="JChartsTest.cs" />
@@ -499,6 +486,9 @@
     <None Include="data\spiderDatasource.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="jasperreports.properties">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="reports\AreaChartReport.jasper">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -511,6 +501,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="reports\BarChartReport.jrxml" />
+    <None Include="reports\Barcode4J2Report.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\Barcode4J2Report.jrxml" />
+    <None Include="reports\Barcode4JReport.jasper">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\Barcode4JReport.jrxml" />
     <None Include="reports\Blank_A4.jasper" />
     <None Include="reports\Blank_A4.jrxml" />
     <None Include="reports\BubbleChartReport.jasper">
@@ -630,48 +628,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="JChartsScriptlet.cs" />
-    <Content Include="libs\ant-launcher-1.7.1.dll" />
-    <Content Include="libs\aopalliance-1.0.dll" />
-    <Content Include="libs\avalon-framework-impl-4.2.0.dll" />
-    <Content Include="libs\batik-anim-1.8.dll" />
-    <Content Include="libs\batik-awt-util-1.8.dll" />
-    <Content Include="libs\batik-css-1.8.dll" />
-    <Content Include="libs\batik-dom-1.8.dll" />
-    <Content Include="libs\batik-ext-1.8.dll" />
-    <Content Include="libs\batik-gvt-1.8.dll" />
-    <Content Include="libs\batik-parser-1.8.dll" />
-    <Content Include="libs\batik-script-1.8.dll" />
-    <Content Include="libs\batik-svg-dom-1.8.dll" />
-    <Content Include="libs\batik-util-1.8.dll" />
-    <Content Include="libs\batik-xml-1.8.dll" />
-    <Content Include="libs\bcmail-jdk14-1.38.dll" />
-    <Content Include="libs\bcmail-jdk14-138.dll" />
-    <Content Include="libs\bcprov-jdk14-1.38.dll" />
-    <Content Include="libs\bcprov-jdk14-138.dll" />
-    <Content Include="libs\bctsp-jdk14-1.38.dll" />
-    <Content Include="libs\castor-core-1.3.3.dll" />
-    <Content Include="libs\castor-xml-1.3.3.dll" />
-    <Content Include="libs\commons-beanutils-1.9.0.dll" />
-    <Content Include="libs\commons-cli-1.0.dll" />
-    <Content Include="libs\commons-codec-1.5.dll" />
-    <Content Include="libs\commons-collections-3.2.2.dll" />
-    <Content Include="libs\commons-dbcp-1.2.dll" />
-    <Content Include="libs\commons-digester-2.1.dll" />
-    <Content Include="libs\commons-discovery-0.2.dll" />
-    <Content Include="libs\commons-lang-2.6.dll" />
-    <Content Include="libs\commons-logging-1.1.1.dll" />
-    <Content Include="libs\commons-math-1.0.dll" />
-    <Content Include="libs\commons-pool-1.3.dll" />
-    <Content Include="libs\commons-vfs-1.0.dll" />
-    <Content Include="libs\core-2.3.0.dll" />
-    <Content Include="libs\dom4j-1.6.1.dll" />
-    <Content Include="libs\ecj-4.3.1.dll" />
-    <Content Include="libs\eigenbase-properties-1.1.0.10924.dll" />
-    <Content Include="libs\eigenbase-resgen-1.3.0.11873.dll" />
-    <Content Include="libs\eigenbase-xom-1.3.0.11999.dll" />
-    <Content Include="libs\httpcore-4.3.2.dll" />
     <Content Include="libs\ICSharpCode.SharpZipLib.dll" />
-    <Content Include="libs\icu4j-57.1.dll" />
     <Content Include="libs\IKVM.AWT.WinForms.dll" />
     <Content Include="libs\IKVM.OpenJDK.Beans.dll" />
     <Content Include="libs\IKVM.OpenJDK.Charsets.dll" />
@@ -701,42 +658,6 @@
     <Content Include="libs\IKVM.Reflection.dll" />
     <Content Include="libs\IKVM.Runtime.dll" />
     <Content Include="libs\IKVM.Runtime.JNI.dll" />
-    <Content Include="libs\itext-2.1.7.js5.dll" />
-    <Content Include="libs\jackson-annotations-2.1.4.dll" />
-    <Content Include="libs\jackson-core-2.1.4.dll" />
-    <Content Include="libs\jackson-databind-2.1.4.dll" />
-    <Content Include="libs\jakarta-regexp-1.4.dll" />
-    <Content Include="libs\jasperreports-6.3.0.dll" />
-    <Content Include="libs\jasperreports-fonts-6.3.0.dll" />
-    <Content Include="libs\javacup-0.10k.dll" />
-    <Content Include="libs\javax.inject-1.dll" />
-    <Content Include="libs\jcharts-0.6.0.dll" />
-    <Content Include="libs\jcommon-1.0.23.dll" />
-    <Content Include="libs\jdom-1.0.dll" />
-    <Content Include="libs\jfreechart-1.0.19.dll" />
-    <Content Include="libs\jtds-1.2.7.dll" />
-    <Content Include="libs\log4j-1.2.17.dll" />
-    <Content Include="libs\lucene-analyzers-common-4.5.1.dll" />
-    <Content Include="libs\lucene-core-4.5.1.dll" />
-    <Content Include="libs\lucene-queries-4.5.1.dll" />
-    <Content Include="libs\lucene-queryparser-4.5.1.dll" />
-    <Content Include="libs\lucene-sandbox-4.5.1.dll" />
-    <Content Include="libs\olap4j-0.9.7.309-JS-3.dll" />
-    <Content Include="libs\serializer-2.7.2.dll" />
-    <Content Include="libs\slf4j-api-1.5.8.dll" />
-    <Content Include="libs\spring-aop-3.0.6.RELEASE.dll" />
-    <Content Include="libs\spring-asm-3.0.6.RELEASE.dll" />
-    <Content Include="libs\spring-context-3.0.6.RELEASE.dll" />
-    <Content Include="libs\spring-expression-3.0.6.RELEASE.dll" />
-    <Content Include="libs\stax-1.2.0.dll" />
-    <Content Include="libs\stax-api-1.0-2.dll" />
-    <Content Include="libs\stax-api-1.0.1.dll" />
-    <Content Include="libs\xercesImpl-2.6.2.dll" />
-    <Content Include="libs\xml-apis-1.3.02.dll" />
-    <Content Include="libs\xml-apis-ext-1.3.04.dll" />
-    <Content Include="libs\xmlbeans-2.6.0.dll" />
-    <Content Include="libs\xmlParserAPIs-2.6.2.dll" />
-    <Content Include="libs\xom-1.0.dll" />
     <Content Include="reports\AreaChart.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
