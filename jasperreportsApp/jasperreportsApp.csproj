@@ -96,14 +96,8 @@
     <Reference Include="bcmail-jdk14-1.38">
       <HintPath>libs\bcmail-jdk14-1.38.dll</HintPath>
     </Reference>
-    <Reference Include="bcmail-jdk14-138">
-      <HintPath>libs\bcmail-jdk14-138.dll</HintPath>
-    </Reference>
     <Reference Include="bcprov-jdk14-1.38">
       <HintPath>libs\bcprov-jdk14-1.38.dll</HintPath>
-    </Reference>
-    <Reference Include="bcprov-jdk14-138">
-      <HintPath>libs\bcprov-jdk14-138.dll</HintPath>
     </Reference>
     <Reference Include="bctsp-jdk14-1.38">
       <HintPath>libs\bctsp-jdk14-1.38.dll</HintPath>
@@ -422,9 +416,6 @@
     </Reference>
     <Reference Include="stax-api-1.0-2">
       <HintPath>libs\stax-api-1.0-2.dll</HintPath>
-    </Reference>
-    <Reference Include="stax-api-1.0.1">
-      <HintPath>libs\stax-api-1.0.1.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
