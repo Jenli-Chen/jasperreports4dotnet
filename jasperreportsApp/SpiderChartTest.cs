@@ -1,6 +1,5 @@
 ﻿using System;
 using java.io;
-using java.sql;
 using java.util;
 using net.sf.jasperreports.engine;
 using net.sf.jasperreports.engine.export;
@@ -12,7 +11,6 @@ using org.jCharts.chartData;
 using org.jCharts.axisChart;
 using org.jCharts.types;
 using org.jCharts.properties;
-using javax.imageio;
 using net.sf.jasperreports.engine.data;
 
 namespace jasperreportsApp

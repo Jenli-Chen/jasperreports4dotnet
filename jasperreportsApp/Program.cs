@@ -1,4 +1,5 @@
 ﻿using net.sf.jasperreports.engine;
+using org.apache.log4j;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,18 @@ namespace jasperreportsApp
 {
     class Program
     {
+        public static readonly string Log4JConfigFileName = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log4j.properties");
+        private static void ConfigureLog4J()
+        {
+            if (System.IO.File.Exists(Log4JConfigFileName))
+            {
+                PropertyConfigurator.configureAndWatch(Log4JConfigFileName);
+                return;
+            }
+        }
         static void Main(string[] args)
         {
+            ConfigureLog4J();
             //java.lang.Class c = java.lang.Class.forName("SpiderChartCustomizer,jasperreportsApp");
             BarcodeTest barcodeTest = new BarcodeTest();
             barcodeTest.ExpReort(DSTest.TASK_HTML);

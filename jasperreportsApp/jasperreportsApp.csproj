@@ -480,6 +480,9 @@
     <None Include="jasperreports.properties">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="log4j.properties">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="reports\AreaChartReport.jasper">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
